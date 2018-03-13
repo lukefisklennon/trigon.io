@@ -1,0 +1,10 @@
+error: Could not read .foreverignore file.
+error: ENOENT: no such file or directory, open '/var/trigon/.foreverignore'
+Running on port 3001
+error: restarting script because change changed
+error: Forever detected script was killed by signal: SIGKILL
+error: Script restart attempt #1
+error: restarting script because change changed
+error: Forever detected script was killed by signal: SIGKILL
+error: Script restart attempt #2
+Running on port 3001

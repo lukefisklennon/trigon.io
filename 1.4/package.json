@@ -1,0 +1,11 @@
+{
+  "name": "Dygo.io",
+  "private": "true",
+  "start": "nodejs server.js",
+  "dependencies": {
+    "cors": "2.8.1",
+    "express": "4.14.0",
+    "profanity-censor": "^1.0.4",
+    "socket.io": "1.5.1"
+  }
+}

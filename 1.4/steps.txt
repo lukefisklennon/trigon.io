@@ -1,0 +1,13 @@
+open putty
+open filezilla
+create droplet (with NodeJS one-click app)
+connect with putty
+login with root and password from email (paste: shift + insert)
+change password
+create dir in var with filezilla
+upload files (server.js,package.json)
+navigate to new dir (cd /var/[dir])
+install socket.io (npm install)
+run server: nohup node static.js > my.log 2>&1& [hit enter] echo $! > pid.txt
+stop server: kill -9 `cat pid.txt`
+shutdown: sudo shutdown -h now

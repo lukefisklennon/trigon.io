@@ -1,0 +1,32 @@
+REMEMBER: UPDATE SERVER LIST IN CLIENT AFTER CREATING A NEW SERVER
+
+Linux:
+open filezilla
+create droplet (with NodeJS one-click app)
+ssh the droplet
+login with root and password from email
+change password
+create dir in var with filezilla
+upload files (server.js, manager.js, settings.json, run.json, package.json)
+navigate to new dir
+npm install
+npm install forever -g
+ufw disable
+run server: forever start ./run.json
+stop server: forever stopall
+shutdown: sudo shutdown -h now
+
+Windows:
+open putty
+open filezilla
+create droplet (with NodeJS one-click app)
+connect with putty
+login with root and password from email (paste: shift + insert)
+change password
+create dir in var with filezilla
+upload files (server.js,package.json)
+navigate to new dir (cd /var/[dir])
+install socket.io (npm install)
+run server: nohup node static.js > my.log 2>&1& [hit enter] echo $! > pid.txt
+stop server: kill -9 `cat pid.txt`
+shutdown: sudo shutdown -h now

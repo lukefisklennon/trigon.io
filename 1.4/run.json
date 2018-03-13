@@ -1,0 +1,14 @@
+[
+	{
+		"uid": "manager",
+		"append": true,
+		"watch": true,
+		"script": "manager.js"
+	},
+	{
+		"uid": "server",
+		"append": true,
+		"watch": true,
+		"script": "server.js"
+	}
+]

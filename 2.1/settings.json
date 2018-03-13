@@ -1,0 +1,14 @@
+{
+	"cores": 2,
+	"authKey": "hTnFM4tSPpeVGAGQkH3B",
+	"insMax": 20,
+	"roomMax": 20,
+	"updateTick": 15,
+	"visibleTick": 1000,
+	"width": 7000,
+	"height": 7000,
+	"dss": 1500,
+	"astNum": 100,
+	"astRadiusMin": 40,
+	"astRadiusMax": 150
+}

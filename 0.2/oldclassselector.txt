@@ -1,0 +1,109 @@
+Old Class Selector
+
+HTML:
+				<div class="ch1">Tailor ship</div>
+				<div id="cbox" class="center">
+					<table id="ccontainer">
+						<tr>
+							<td id="c0" class="ctab"><img src="http://placehold.it/50x50?text=Fighter"><br>Fighter</td>
+							<td id="c1" class="ctab"><img src="http://placehold.it/50x50?text=Tanky"><br>Tanky</td>
+							<td id="c2" class="ctab"><img src="http://placehold.it/50x50?text=Striker"><br>Striker</td>
+							<td id="c3" class="ctab"><img src="http://placehold.it/50x50?text=Speedy"><br>Speedy</td>
+							<td id="c4" class="ctab"><img src="http://placehold.it/50x50?text=Destroyer"><br>Destroyer</td>
+						</tr>
+					</table>
+					<div id="cdetails"></div>
+				</div>
+
+CSS:
+.ch1 {
+	font-family: "Baloo", cursive;
+	color: white;
+	font-size: 40px;
+}
+
+.center {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#cbox {
+	width: 600px;
+	font-size: 18px;
+}
+
+#ccontainer {
+	width: 100%;
+	border-spacing: 5px;
+	margin-bottom: -5px;
+}
+
+.ctab {
+	width: 20%;
+	text-align: center;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	font-weight: bold;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	-webkit-transition: background-color 0.25s;
+	transition: background-color 0.25s;
+}
+
+.ctab:hover {
+	background-color: #0066ff;
+}
+
+.ctabsel {
+	background-color: #0066ff;
+}
+
+#cdetails {
+	text-align: left;
+	width: 590px;
+	margin-left: 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+img {
+	pointer-events: none;
+}
+
+JavaScript:
+
+var classTabs = document.getElementsByClassName("ctab");
+var classDetails = document.getElementById("cdetails");
+
+---
+
+var classClick = function(e) {
+	if (typeof e == "object") {
+		n = Number(e.target.getAttribute("id").substr(1,1));
+		el = e.target;
+	} else {
+		n = e;
+		el = document.getElementById("c"+n);
+	};
+	classDetails.innerHTML = menuClasses[n].description;
+	for (i=0;i<menuClasses[n].stats.length;i++) {
+		classDetails.innerHTML += "<br>"+menuClassesStats[i]+": "+"&#9609;".repeat(menuClasses[n].stats[i]);
+	};
+	for (i=0;i<classTabs.length;i++) {
+		classTabs[i].className = "ctab";
+	};
+	el.className += " ctabsel";
+};
+
+for (i=0;i<classTabs.length;i++) {
+	classTabs[i].onclick = classClick;
+};
+
+classClick(0);

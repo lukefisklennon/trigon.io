@@ -1,0 +1,85 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	font-family: Arial;
+	color: #FFFFFF;
+	overflow-x: hidden;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;  
+}
+
+body {
+	position: relative;
+}
+
+#menu {
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	position: fixed;
+	text-align: center;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+#backdrop {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	z-index: -1;
+	background-color: #000000;
+	opacity: 0.6;
+}
+
+#container {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#heading {
+	font-family: "Baloo", cursive;
+	color: white;
+	font-size: 80px;
+}
+
+.mitem {
+	width: 400px;
+	height: 40px;
+	border: none;
+	margin: 5px;
+	outline: none;
+	border-radius: 10px;
+}
+
+#alias {
+	padding: 10px;
+	font-size: 20px;
+	margin-left: 8px;
+}
+
+#play {
+	position: relative;
+	background-color: #00b8e6;
+	line-height: 30px;
+	font-family: "Baloo", cursive;
+	font-weight: bold;
+	font-size: 20px;
+	cursor: pointer;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+#play:hover {
+	background-color: #1ad1ff;
+}
+
+#play:active {
+	background-color: #00b8e6;
+}

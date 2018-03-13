@@ -1,0 +1,225 @@
+0 - Alpha
+	0.0 - Inital version
+		Sunday, 25 September 2016
+			- Used the code from a previous game (Sharp Shooter)
+			- Adapted to new style
+			- Basic game objects
+			- Close-to-final graphics
+
+		Monday, 26 September 2016
+			- Slightly fancy menu
+			- Frame delta compensation
+			- Naming system
+			- Health
+			- Walls and bouncing
+			- Death
+
+	0.1 - Attempt at asteroids
+		Tuesday, 27 September 2016
+			- Minor fixes
+			- Added asteroids
+			- Left not working!
+
+	0.2 - Points, upgrades and classes
+		Tuesday, 27 September 2016
+			- Removed asteroids (for the moment)
+
+		Wednesday, 28 September 2016
+			- Nothing (busy at UNSW for 12 hours!)
+
+		Thursday, 29 September 2016
+			- Points and score system
+			- Added leaderboard
+
+		Friday, 30 September 2016
+			- Upgrades system (see balancing.txt)
+			- Upgrades in the HUD
+
+		Saturday, 1 October 2016
+			- Added classes to the menu
+
+		Sunday, 2 October 2016
+			- Added 3D effect (box- and text-shadow) to many menu elements
+			- Removed the tabs layout of classes from the menu
+			- Added dropdowns
+			- Added class stats to the five classes
+			- Created ship graphics
+
+		Monday, 3 October 2016
+			- Fixed death/disconnect bug
+
+	0.3	- Asteroids, abilities and physics
+		Monday, 3 October 2016
+			- Stores class and ability in localStorage (as well as alias)
+			- Added abilities
+
+		Tuesday, 4 October 2016
+			- Minor improvements
+
+		Wednesday, 5 October 2016
+			- Reintroduced asteroids
+			- Full physics collision
+			- Points from asteroids
+
+		Thursday, 6 October 2016
+			- Respawning of asteroids
+			- Attempts to fix physics glitches
+			- Asteroid updates not working on the tablet?
+			- Auto-focus of alias box
+
+		Friday, 7 October 2016
+			- Fixed collision
+			- Abilities not completed
+
+	0.4 - Abilities, crash damage, performance optimization and comments
+		Saturday, 8 October 2016
+			- Completed abilities
+
+		Sunday, 9 October 2016
+			- Added crash damage
+			- Performance optimization
+			- Attempt to fix self bullet collision (ongoing)
+
+		Monday, 10 October 2016
+			- Comments
+
+		Tuesday, 11 October 2016
+			- Comments
+
+	0.5 - Performance optimization
+		Wednesday, 12 October 2016
+			- Performance optimization
+			- Shake effect
+
+		Thursday, 13 October 2016
+			- Minor fixes
+
+		Friday, 14 October 2016
+			- Viewport scaling
+
+		Saturday, 15 October 2016
+			- Viewport scaling
+			- DigitalOcean
+
+		Sunday, 16 October 2016
+			- DigitalOcean
+
+	0.6 - New menu, upgrades bars
+		Sunday, 16 October 2016
+			- Card menu layout
+
+		Monday, 17 October 2016
+			- Upgrade bars
+			- Sharing incentive
+
+		Tuesday, 18 October 2016
+			- Viewport scaling
+
+		Thursday, 20 October 2016
+			- Notifications
+
+	0.7 - Roomification
+		Thursday, 20 October 2016
+			- Roomification
+
+		Monday, 21 October 2016
+			- Minor HUD changes
+
+		Tuesday, 22 October 2016
+			- Fixed point gaining
+
+		Thursday, 27 October 2016
+			- DigitalOcean speed test (2GB droplet, 13 tabs, ~3Mbps out, 60fps, low latency)
+
+		Friday, 28 October 2016
+			- Changed bullet range from life to distance
+			- Balancing
+
+	0.8 - Alpha Testing
+		Saturday, 29 October 2016
+			- Performance optimization (reduced asteroid collisions to 10% by only checking near asteroids)
+			- You get a third of your score as points when you respawn
+
+		Sunday, 30 October 2016
+			- First ever Alpha Testing session!!! (10 players, 2.5 hours)
+
+1 - Beta
+	1.0 - Find server
+		Monday, 31 October 2016
+			- Happy Halloween!
+			- Find sever of lowest ping
+
+	1.1 - Linear interpolation (not finsished)
+		Tuesday, 1 November 2016
+			- Linear interpolation
+
+		Wednesday, 2 November 2016
+			- Linear interpolation
+
+		Thursday, 3 November 2016
+			- Linear interpolation
+
+	1.2 - Camera transitions, minimap, new name, game stats
+		Friday, 4 November 2016
+			- Camera lerp (linear interpolation)
+
+		Monday, 7 November 2016
+			- Minimap
+
+		Tuesday, 8 November 2016
+			- Changed the name from "Dygo.io" to "Trigon.io"
+
+		Friday, 11 November 2016
+			- Added social media profile icons
+
+		Sunday, 13 November 2016
+			- Game stats
+			- Improved menu
+			- New ad slot
+
+	1.3 - Class updates, load balancing
+		Friday, 18 November 2016
+			- Fixed destroyer class
+			- Added secret class
+
+		Saturday, 19 November 2016
+			- Colour changes
+			- Hack proofing
+
+		Sunday, 20 November 2016
+			- Load balancing
+
+		Friday, 25 November 2016
+			- Assign lowest possible port for new instances
+
+	1.4 - Close to final version
+		Saturday, 26 November 2016
+			- Spectate mode
+			- Block abilities for those who use ad blockers
+
+		Sunday, 27 November 2016
+			- Hacking by Felix
+			- Helped Felix with bot development
+
+		Tuesday, 29 November 2016
+			- Prevented creation of fake spectators
+
+		Sunday, 11 December 2016
+			- After a long break...
+			- Invisibilty dissolves
+			- Added a chat
+
+Next
+	- Performance optimization
+	- Crash proof
+	- Fix grid
+
+Production
+	- Crash proof
+	- Optimized
+	- Social media
+	- Domain name
+	- DigitalOcean
+	- Google Ads
+	- Analytics
+	- Game sites

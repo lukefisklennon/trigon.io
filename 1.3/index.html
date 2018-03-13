@@ -1,0 +1,141 @@
+<html>
+	<head>
+		<title>Trigon.io</title>
+		<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+		<meta property="og:title" content="Dygo.io"/>
+		<meta property="og:image" content="http://placehold.it/300x300?text=Dygo.io"/>
+		<meta property="og:description" content="Battle other ships in the new multiplayer shooter, as you upgrade and manoeuvre your own craft. Play for free!"/>
+		<!--<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>-->
+	</head>
+	<body>
+		<div id="menu">
+			<div id="mcontainer">
+				<div id="title">
+					<div id="heading" class="baloo">Trigon.io</div>
+					<div id="by" class="baloo"><span style="color:#CCCCCC;">created by</span> <div id="logo" class="logo" style="display:inline;"><span style="color:#ff8c1a;">iO</span>NINJA</div></div>
+					<div id="profiles" style="margin-top:-80px;margin-bottom:0px;opacity:0;pointer-events:none;">
+						<a href="https://www.facebook.com/IO-Ninja-1007767929335418" target="_blank"><button class="mitem sibutton sifacebook profile"><img src="icons/facebook.png" class="smicon"></button></a>
+						<a href="https://www.twitter.com/ioninja14" target="_blank"><button class="mitem sibutton sitwitter profile"><img src="icons/twitter.png" class="smicon"></button></a>
+						<a href="https://www.youtube.com/channel/UCFVkW-3MOvXGvvBC6zPEVhA" target="_blank"><button class="mitem sibutton siyoutube profile"><img src="icons/youtube.png" class="smicon"></button></a>
+						<a href="https://www.instagram.com/io.ninja" target="_blank"><button class="mitem sibutton siinstagram profile"><img src="icons/instagram.png" class="smicon"></button></a>
+						<a href="https://plus.google.com/116659747137025922017" target="_blank"><button class="mitem sibutton sigoogle profile"><img src="icons/google.png" class="smicon"></button></a>
+					</div>
+				</div><div class="column">
+					<div class="card other" style="text-align: left;">
+						<div id="msheading" class="baloo">My ship</div>
+						<br>
+						<b>Class:</b> <span id="msclass"></span>
+						<br>
+						<b>Ability:</b> <span id="msability"></span>
+						<p id="msstats"></p>
+					</div>
+					<div class="card other">
+						<div id="fiheading" class="smheading baloo">Connect with us</div>
+						<div id="fitext">Get updates and find about new games by connecting to <div class="baloo" style="display:inline;"><span style="color:#CC8500;">iO</span>NINJA</div> on social media</div>
+						<a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Ftrigon%2F&ref_src=twsrc%5Etfw&screen_name=ioninja14&tw_p=followbutton" target="_blank"><button class="mitem sibutton sitwitter"><img src="icons/twitter.png" class="smicon" style="margin-right:5px;width:22px;">Follow</button></a>
+						<a href="http://www.youtube.com/subscription_center?add_user=io_ninja" target="_blank"><button class="mitem sibutton siyoutube"><img src="icons/youtube.png" class="smicon" style="margin-right:5px;width:22px;">Subscribe</button></a>
+					</div>
+				</div><div class="column">
+					<div class="card">
+						<div id="main">
+							<div id="connecting">Connecting...</div>
+							<div id="tips">
+								Move your <b>mouse</b> to aim
+								<br>
+								<b>Click</b> to boost and fire
+								<br>
+								<b>Spacebar</b> to use ability
+							</div>
+							<br>
+							<input type="text" id="alias" class="mitem" placeholder="Alias" maxlength="15"></input>
+							<br>
+							<select id="class" class="mitem">
+								<option value="-1" disabled selected>Select class</option>
+								<option value="0">Fighter</option>
+								<option value="1">Tanky</option>
+								<option value="2">Striker</option>
+								<option value="3">Speedy</option>
+								<option value="4">Destroyer</option>
+							</select>
+							<select id="ability" class="mitem">
+								<option value="-1" disabled selected>Select ability</option>
+								<option value="0">Repair</option>
+								<option value="1">Super Boost</option>
+								<option value="2">Shield</option>
+								<option value="3">Invisibility</option>
+							</select>
+							<br>
+							<button id="play" class="mitem blue">Play</button>
+							<br>
+							<button id="spectate" class="mitem">Spectate</button>
+						</div>
+						<div id="stats">
+							<div id="sheading" class="baloo">Game Over</div>
+							<table id="stable">
+								<tr>
+									<td>
+										Score<div class="stat"></div>
+									</td>
+									<td>
+										Ships destroyed<div class="stat"></div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Time survived<div class="stat"></div>
+									</td>
+									<td>
+										Top leaderboard position<div class="stat"></div>
+									</td>
+								</tr>
+							</table>
+							<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//trigon.io/" target="_blank"><button class="mitem sibutton sifacebook"><img src="icons/facebook.png" class="smicon" style="margin-right:5px;width:22px;">Share</button></a>
+							<a id="sstwitter" target="_blank"><button class="mitem sibutton sitwitter"><img src="icons/twitter.png" class="smicon" style="margin-right:5px;width:22px;">Tweet</button></a>
+							<button id="continue" class="mitem blue" style="margin-top:10px;">Continue</button>
+						</div>
+					</div>
+					<div class="card other">
+						<div id="siheading" class="smheading baloo">Unlock a secret class</div>
+						<div id="sitext">Share on social media and support the game</div>
+						<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//trigon.io/" target="_blank"><button class="mitem sibutton sifacebook unlocker"><img src="icons/facebook.png" class="smicon" style="margin-right:5px;width:22px;">Share</button></a>
+						<a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ftrigon.io%2F&ref_src=twsrc%5Etfw&text=Play%20Trigon.io,%20the%20awesome%20new%20.io%20game%20from%20%23IONinja%20http://trigon.io/%20%23trigonio%20%23trigon.io&tw_p=tweetbutton&via=ioninja14" target="_blank"><button class="mitem sibutton sitwitter unlocker"><img src="icons/twitter.png" class="smicon" style="margin-right:5px;width:22px;">Tweet</button></a>
+						<!--<button class="mitem sibutton sigoogle"><a href="https://plus.google.com/share?url=http%3A//dygo.io/" target="_blank"Google+</a></button>-->
+					</div>
+				</div>
+				<div class="column">
+					<div class="card other">
+						<img src="https://placeholdit.imgix.net/~text?txtsize=50&bg=0066ff&txtclr=ffffff&txt=Advertisement&w=300&h=300" width="300px" height="300px">
+						<br>
+						Advertisement coming soon
+					</div>
+				</div>
+			</div>
+		<div id="bad">
+			<img src="https://placeholdit.imgix.net/~text?txtsize=50&bg=0066ff&txtclr=ffffff&txt=Advertisement&w=750&h=100" width="750px" height="100px">
+			<br>
+			<a href="mailto:ioninja14@gmail.com?subject=[Trigon.io]%20Feedback" target="_blank" class="link">Feedback</a> <b>|</b> <a href="../progress.txt" target="_blank" class="link">Changelog</a> <b>|</b> <a href="credits.txt" target="_blank" class="link">Credits</a> <b>|</b> <a href="http://iogames.space/" target="_blank" class="link">More io games</a>
+		</div>
+		<div id="backdrop"></div>
+		</div>
+		<div id="hud">
+			<div id="leaderboard" class="round">
+				<div id="lheading" class="baloo">Leaderboard</div>
+				<table id="board"></table>
+			</div>
+			<div id="points" class="round"></div>
+			<div id="astatus" class="round">
+				<div id="aheading">Ability</div>
+				<div id="aname" class="middle"></div>
+				<div id="afill" class="round"></div>
+			</div>
+			<div id="upgrades"></div>
+			<canvas id="minimap" class="round"></canvas>
+			<div id="bnotification" class="baloo"></div>
+		</div>
+		<canvas id="canvas"></canvas>
+		<script src="main.js"></script>
+	</body>
+</html>

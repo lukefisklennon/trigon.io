@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>Dygo.io</title>
+		<script src="socket.io.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+		<!--<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>-->
+	</head>
+	<body>
+		<div id="menu">
+			<div id="container">
+				<div id="heading">DYGO.io</div>
+				<div id="tips">
+					Move your mouse to aim
+					<br>
+					Click to boost and fire
+					<br>
+					Avoid getting hit
+				</div>
+				<br>
+				<input type="text" id="alias" class="mitem" placeholder="Alias"></input>
+				<br>
+				<select id="class" class="mitem" style="left: 4px;">
+					<option value="0" disabled selected>Select class</option>
+					<option value="0">Fighter</option>
+					<option value="1">Tanky</option>
+					<option value="2">Striker</option>
+					<option value="3">Speedy</option>
+					<option value="4">Destroyer</option>
+				</select>
+				<select class="mitem" style="right: 1px;">
+					<option value="0" disabled selected>Select ability</option>
+					<option value="0">Repair</option>
+					<option value="1">Missile</option>
+					<option value="2">Super Boost</option>
+					<option value="3">Invincibility</option>
+					<option value="4">Invisibility</option>
+				</select>
+				<br>
+				<button id="play" class="mitem">Play</button>
+				<br>
+				<button id="spectate" class="mitem">Spectate</button>
+			</div>
+			<div id="backdrop"></div>
+		</div>
+		<div id="leaderboard" class="round">
+			<h1>Leaderboard</h1>
+			<table id="board"></table>
+		</div>
+		<div id="points" class="round"></div>
+		<div id="upgrades"></div>
+		<canvas id="canvas"></canvas>
+		<script src="main.js"></script>
+	</body>
+</html>

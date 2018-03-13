@@ -1,0 +1,23 @@
+Classes:
+	- Fighter
+	- Tanky
+	- Striker
+	- Speedy
+	- Destroyer
+
+Upgrades:
+	- Max health
+	- Health regen
+	- Boost speed
+	- Bullet damage
+	- Bullet speed
+	- Bullet range
+	- Reload speed
+	- Ability
+	
+Silly upgrade desctiptions:
+	- Fighter: The basic design: good at everything, but not great at everything. The perfect class for those who are too busy to think too much.
+	- Tanky: Tanky, hence the name: can take many a hit before feeling slightly irritated. Great if going fast makes you dizzy.
+	- Striker: Mean and lean. Well not actually that lean. Can strike from afar, dealing a plethora of damage (look that one up on your favourite search engine).
+	- Speedy: Fast, very fast. Sometimes, too fast. Speed is key, according those who play the class (they overlook getting destroyed all the time).
+	- Destroyer: The embodiment of not being nice. Basically, destroy at all costs, by crashing into other ships. Prehaps it should be called 'The Battle Ram'.

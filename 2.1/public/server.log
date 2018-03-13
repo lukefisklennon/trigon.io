@@ -1,0 +1,81 @@
+error: Could not read .foreverignore file.
+error: ENOENT: no such file or directory, open '/var/trigon/.foreverignore'
+3001
+error: restarting script because add changed
+error: Forever detected script was killed by signal: SIGKILL
+error: Script restart attempt #1
+error: restarting script because change changed
+error: Forever detected script was killed by signal: SIGKILL
+error: Script restart attempt #2
+3001
+error: Forever detected script was killed by signal: SIGKILL
+error: Could not read .foreverignore file.
+error: ENOENT: no such file or directory, open '/var/trigon/.foreverignore'
+3001
+error: restarting script because change changed
+error: Forever detected script was killed by signal: SIGKILL
+error: Script restart attempt #1
+error: restarting script because change changed
+error: Forever detected script was killed by signal: SIGKILL
+error: Script restart attempt #2
+3001
+error: Forever detected script was killed by signal: SIGKILL
+error: Script restart attempt #3
+3001
+/var/trigon/server.js:637
+				return Object.keys(a.players).length - Object.keys(b.players).length;
+				              ^
+
+TypeError: Cannot convert undefined or null to object
+    at /var/trigon/server.js:637:19
+    at Array.sort (native)
+    at findRoom (/var/trigon/server.js:636:26)
+    at Namespace.<anonymous> (/var/trigon/server.js:1395:7)
+    at emitOne (events.js:96:13)
+    at Namespace.emit (events.js:188:7)
+    at Namespace.emit (/var/trigon/node_modules/socket.io/lib/namespace.js:206:10)
+    at /var/trigon/node_modules/socket.io/lib/namespace.js:174:14
+    at _combinedTickCallback (internal/process/next_tick.js:67:7)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
+error: Forever detected script exited with code: 1
+error: Script restart attempt #4
+3001
+error: Forever detected script was killed by signal: SIGKILL
+error: Script restart attempt #5
+3001
+/var/trigon/server.js:637
+				return Object.keys(a.players).length - Object.keys(b.players).length;
+				              ^
+
+TypeError: Cannot convert undefined or null to object
+    at /var/trigon/server.js:637:19
+    at Array.sort (native)
+    at findRoom (/var/trigon/server.js:636:26)
+    at Namespace.<anonymous> (/var/trigon/server.js:1395:7)
+    at emitOne (events.js:96:13)
+    at Namespace.emit (events.js:188:7)
+    at Namespace.emit (/var/trigon/node_modules/socket.io/lib/namespace.js:206:10)
+    at /var/trigon/node_modules/socket.io/lib/namespace.js:174:14
+    at _combinedTickCallback (internal/process/next_tick.js:67:7)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
+error: Forever detected script exited with code: 1
+error: Script restart attempt #6
+3001
+/var/trigon/server.js:637
+				return Object.keys(a.players).length - Object.keys(b.players).length;
+				              ^
+
+TypeError: Cannot convert undefined or null to object
+    at /var/trigon/server.js:637:19
+    at Array.sort (native)
+    at findRoom (/var/trigon/server.js:636:26)
+    at Namespace.<anonymous> (/var/trigon/server.js:1395:7)
+    at emitOne (events.js:96:13)
+    at Namespace.emit (events.js:188:7)
+    at Namespace.emit (/var/trigon/node_modules/socket.io/lib/namespace.js:206:10)
+    at /var/trigon/node_modules/socket.io/lib/namespace.js:174:14
+    at _combinedTickCallback (internal/process/next_tick.js:67:7)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
+error: Forever detected script exited with code: 1
+error: Script restart attempt #7
+3001
